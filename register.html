@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+	<title>Watch It Outside Event and Co-Register</title>
+	<link rel="stylesheet" href=""  type="text/css" media="all">
+</head>
+
+<body style="display:flex;justify-content: center;align-items: center;width:100%;background-color:#FFFFFF08;border-radius: 15px;padding-bottom:15px;">
+<style>
+			/*Popup*/
+	form {padding-right:40px;padding-left:40px;}
+	html {margin:none !important;padding:none!important;background-color: #081b1d;padding:10px;padding-right: 30px}
+	label {display:flex;flex-direction: column;margin-top: 20px;margin-bottom: 15px;justify-content: center;color:white;}
+	input {display:flex;flex-direction: column;width:100%;border:solid 1px;background-color:white;margin-right: 20px;border-radius: 10px;}
+	textarea {width:100%;height:100px;}
+	.liste{display:flex;flex-direction: column:background-color:silver;height:20px;border-radius: 15px;}
+	select {width:100%;height:30px;border-radius: 15px;text-align: center;}
+
+</style>
+<form method="post" action="" style="width:100%;margin-right:23px">
+	<label class>Register</label>
+	<label> Your Name (required)</label>
+	   <input type="text" name="your-name"> 
+
+	<label> Your Email (required)</label>
+	   <input type="text" name="your-Email">
+
+	<label> Subject (required)</label>
+		<input type="text" name="Subject">
+	<label>The Movies</label>
+	    <select name="movies" id="movies">
+		    <optgroup label="6th August"class="liste">
+	           <option value="Pinnochio"class="liste">Pinnochio</option>
+	           <option value="Jungle Cruise"class="liste">Jungle Cruise</option>
+	           <option value="Mulan"class="liste">Mulan</option>
+	       </optgroup>
+	        <optgroup label="7th August"class="liste">
+	           <option value="Tenet"class="liste">Tenet</option>
+	           <option value="Spider-Man far from home"class="liste">Spider-Man Far From Home</option>
+	           <option value="Bloodshot"class="liste">Bloodshot</option>
+	       </optgroup>
+	        <optgroup label="8th August"class="liste">
+	           <option value="Lion"class="liste">Lion</option>
+	           <option value="Robert the Bruce"class="liste">Robert the Bruce</option>
+	           <option value="1917"class="liste">1917</option>
+	       </optgroup>
+	       <optgroup label="9th August"class="liste">
+	           <option value="Daddy's home"class="liste">Daddy's home</option>
+	           <option value="Project power"class="liste">Project power</option>
+	           <option value="Terminator dark fate"class="liste">Terminator Dark Fate</option>
+	       </optgroup>
+  		</select>
+	<label> Your Message</label>
+		<textarea type="text" name="your-message"></textarea>
+			<input type="submit" value="Envoyer" />
+</form>    
+</body>
+</html>
+
+	
