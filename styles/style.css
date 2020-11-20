@@ -41,6 +41,7 @@
 						position: fixed;
 						top: 0px;
 						width: 100%;
+						height:100px;
 						z-index:999;
 						background-color: white;opacity: 0.70;
 						box-shadow: 10px 10px 10px rgba(0,0,0,0.9);
@@ -50,10 +51,16 @@
 							text-decoration: none;
 							color:black;
 							font-family: Montserrat;
+							font-size: 3vw;
 						}
 						.header a:hover {
 							transform: scale(1.01);
 						}
+						.btn_home {
+							margin-right: 50px;
+						}
+		
+
 		/*Title*/
 						.titre{
 							margin-left:50px;
@@ -284,6 +291,19 @@
 /*desktop device*/
 	@media all and (min-device-width: 480px)
 	{
+	/*Header*/
+		/*Container*/
+					.header {
+						height:50px;
+					}
+		/*Links*/
+					.header  a {
+						font-size: 1vw;
+					}
+					.btn_home {
+						margin-right:initial;
+					}
+		
 	/*Body Header*/
 		/*Container*/
 					.header_container {
