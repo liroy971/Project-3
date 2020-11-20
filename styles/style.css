@@ -1,81 +1,336 @@
-/*Fichier-CSS*/
-/*Container*/
-		html{margin:0px !important;padding:0px !important;}
-		body {width:;margin:0px !important;background-image: linear-gradient(#000a18,#001815,#280814, #000a18);}
-		header {width: 100% !important;}
-   		button {padding:20px;padding-left:100px;padding-right:100px;border-radius: none ;background-color: #b2b5b9;color:black;font-size: 1em;width:100%;border:none;text-align: center;cursor: pointer;}
-   		button:active {color:gold;}
-   		button:hover {box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);transform: scale(1.01);color:gold;}
-/*Mobile device*/
-/*Header*/
-			.header{display: flex;flex-direction: row;justify-content:space-between;align-items: center;position: fixed;top: 0px;width: 100%;z-index:999;background-color: white;opacity: 0.70;box-shadow: 10px 10px 10px rgba(0,0,0,0.9);}
-				.header  a {text-decoration: none;color:black;font-family: Montserrat;}
-				.header a:hover {transform: scale(1.01);}
-				.titre{margin-left:50px;}
-				.header_menu{}
-				.menu_list{margin-right:50px;list-style: none;list-style-type: none;display: flex;}
-				.menu_list li {margin-right: 20px;text-align: center;}
-				.menu_list li:hover {transform: scale(1.01);color:gold;}
-/*Body Header*/
-			.header_container{display: flex;flex-direction: column;margin:50px;margin-top: 120px;border-radius:10px;box-shadow: 5px 5px 10px rgba(0,0,0,0.9);}
-				.header_photo{ width:100%;border-radius:10px 10px 0px 10px;}
-				.header_description{text-align:left;background-color: #b2b5b9;border-radius:0px 0px 10px 10px;}
-				.header_description a {text-decoration: none;color:#000;}
-				.description_txt{margin-left:50px;margin-right:50px;font-size:1vw;font-family: Montserrat;color:black;padding: 20px;}
-				.body_title{font-family: Montserrat;text-align: center;color:#000;font-size:1.5vw}		
-			.body_Menu{display:flex;justify-content: center;text-align:center;}
-			.news {border-top-right-radius:10px;border-bottom-right-radius:10px;font-size: 24px}
-			.movies{border-top-left-radius:10px;border-bottom-left-radius:10px;font-size: 24px}
 
-/*Movies Posters*/
-/*Section => Movies Posters*/
-				.section_day{background-color: #FFFFFF08; padding: 5px;padding-bottom:50px;margin:50px;border-radius:10px;box-shadow: 5px 5px 10px rgba(0,0,0,0.9);}
-					.day{text-align: center;color:#b2b5b9;font-family: montserrat;}
-					.day_container{display: flex;flex-direction: row;justify-content:space-between;margin-left:50px;margin-right:50px;padding:5px;padding-bottom:30px;}
-						
-/*CARDS*/
-				.card_a{width:33.33333%;display: flex;flex-direction: row;justify-content:space-between;margin:10px;text-align: center;border-radius:10px;position:relative;}					
-				.box {display:none;box-shadow: 5px 5px 15px rgba(0,0,0,0.6);opacity:0.9;line-height: 15px;border-radius: 0px 0px 10px 10px;justify-content: center;}
-					.card_hour{color:white;font-family: Montserrat;}
-					.card_description{color:white;font-family: Montserrat;margin-bottom: 20px;}
-				.card_a:hover .box{display:flex;flex-direction: column;position:absolute;top:10;left:0;right:0;bottom:0;background-color: #333;}
-				.day_photo{width:100%;border-radius:10px;box-shadow: 5px 5px 10px rgba(0,0,0,0.9);transition: 1s ease;}
-				.day_photo:hover { box-shadow: 5px 5px 15px rgba(0,0,0,0.6);opacity:0.4;}
-/*Section => News*/	
-						.new{background-color: #FFFFFF08; padding: 5px;margin:50px;border-radius:10px;box-shadow: 5px 5px 10px rgba(0,0,0,0.9);}
-				.new_date{text-align: center;color:#b2b5b9;font-family: montserrat;}
-				.new_container{display: flex;flex-direction: column;align-items: center;background-color: #FFFFFFA6;margin-left:50px;margin-right:50px;margin-bottom:50px;padding:10px;border-radius:10px;}
-					.new_photo{width:100%;border-radius:10px;}
-					.new_description{margin-left:20px;margin-right:20px;font-size: 2vw;}
-/*Footer*/
-			.footer_menu{display: flex;flex-direction: row-reverse;justify-content:space-between;align-items: flex-end;}
-				.link_list{color: white;font-size: 30px;margin-right:30px;}
-				.link_list  a,  li{text-decoration: none;color:white;list-style: none;list-style-type: none;font-family: Montserrat;}
-				.social_media{display: flex;flex-direction: column;justify-content:flex-end;align-items: flex-end;list-style: none;list-style-type: none;}
-					.logo_social{width:20%;}
-					.logo{width:10%;}
+/*Fichier-CSS*/
+/*Mobile device*/
+	/*Page Container*/
+			html {
+				margin:0px !important;
+				padding:0px !important;
+			}
+			body {
+				margin:0px !important;
+				background-image: linear-gradient(#000a18,#001815,#280814, #000a18);
+			}
+			header {
+				width: 100% !important;
+			}
+	   		button {
+	   			padding:20px;
+	   			padding-left:100px;
+	   			padding-right:100px;
+	   			border-radius: none ;
+	   			background-color: #b2b5b9;
+	   			color:black;font-size: 1em;
+	   			width:100%;
+	   			border:none;
+	   			text-align: center;cursor: pointer;
+	   		}
+	   		button:active {
+	   			color:gold;
+	   		}
+	   		button:hover {
+	   			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	   			transform: scale(1.01);
+	   			color:gold;
+	   		}
+	/*Header*/
+		/*Container*/
+					.header {
+						display: flex;flex-direction: row;
+						justify-content:space-between;
+						align-items: center;
+						position: fixed;
+						top: 0px;
+						width: 100%;
+						z-index:999;
+						background-color: white;opacity: 0.70;
+						box-shadow: 10px 10px 10px rgba(0,0,0,0.9);
+					}
+		/*Links*/
+						.header  a {
+							text-decoration: none;
+							color:black;
+							font-family: Montserrat;
+						}
+						.header a:hover {
+							transform: scale(1.01);
+						}
+		/*Title*/
+						.titre{
+							margin-left:50px;
+						}
+		/*Menu Header*/
+						.header_menu {}
+						.menu_list {
+							margin-right:50px;
+							list-style: none;
+							list-style-type: none;
+							display: flex;
+						}
+						.menu_list li {
+							margin-right: 20px;
+							text-align: center;
+						}
+						.menu_list li:hover {
+							transform: scale(1.01);
+							color:gold;
+						}
+	/*Body Header*/
+		/*Container*/
+					.header_container {
+						display: flex;
+						flex-direction: column;
+						margin:50px;
+						margin-top: 120px;
+						border-radius:10px;
+						box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+					}
+		/*Photos*/
+						.header_photo {
+							width:100%;
+							border-radius:10px 10px 0px 10px;
+						}
+		/*Description*/
+						.header_description {
+							text-align:left;
+							background-color: #b2b5b9;
+							border-radius:0px 0px 10px 10px;
+						}
+						.header_description a {
+							text-decoration: none;color:#000;
+						}
+						.description_txt {
+							margin-left:50px;
+							margin-right:50px;
+							font-size:1vw;
+							font-family: Montserrat;
+							color:black;padding: 20px;
+						}
+						.description_txt a:hover {
+							color: gold;
+						}
+						.body_title {
+							font-family: Montserrat;
+							text-align: center;
+							color:#000;
+							font-size:1.5vw;
+						}
+		/*Menu*/		
+					.body_Menu {
+						display:flex;
+						justify-content: center;
+						text-align:center;
+					}
+					.news {
+						border-top-right-radius:10px;
+						border-bottom-right-radius:10px;
+						font-size: 24px;
+					}
+					.movies {
+						border-top-left-radius:10px;
+						border-bottom-left-radius:10px;
+						font-size: 24px;
+					}
+	/*Section => Movies Posters*/
+		/*Container*/
+						.section_day {
+							background-color: #FFFFFF08;
+							padding: 5px;
+							padding-bottom:50px;
+							margin:50px;
+							border-radius:10px;
+							box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+						}
+		/*Date*/
+							.day {
+								text-align: center;
+								color:#b2b5b9;
+								font-family: montserrat;
+							}
+		/*Card row container*/
+							.day_container {
+								display: flex;
+								flex-direction: row;
+								justify-content:space-between;
+								margin-left:50px;
+								margin-right:50px;
+								padding:5px;
+								padding-bottom:30px;
+							}
+								
+		/*CARDS*/
+			/*Card Container*/
+							.card_a {
+								width:33.33333%;
+								display: flex;
+								flex-direction: row;
+								justify-content:space-between;
+								margin:10px;
+								text-align: center;
+								border-radius:10px;
+								position:relative;
+							}
+			/*Description container*/					
+							.box {
+								display:none;
+								box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+								opacity:0.9;
+								line-height: 15px;
+								border-radius: 0px 0px 10px 10px;
+								justify-content: center;
+							}
+								.card_hour {
+									color:white;
+									font-family: Montserrat;
+								}
+								.card_description {
+									color:white;
+									font-family: Montserrat;
+									margin-bottom: 20px;
+								}
+							.card_a:hover .box {
+								display:flex;
+								flex-direction: column;
+								position:absolute;
+								top:10;
+								left:0;
+								right:0;
+								bottom:0;
+								background-color: #333;
+							}
+			/*Card Photos*/
+							.day_photo {
+								width:100%;
+								border-radius:10px;
+								box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+								transition: 1s ease;
+							}
+							.day_photo:hover {
+								box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+								opacity:0.4;
+							}
+	/*Section => News*/	
+		/*Container*/
+					.new {
+						background-color: #FFFFFF08;
+						padding: 5px;
+						margin:50px;
+						border-radius:10px;
+						box-shadow: 5px 5px 10px rgba(0,0,0,0.9);
+					}
+		/*Date*/
+						.new_date {
+							text-align: center;
+							color:#b2b5b9;
+							font-family: montserrat;
+						}
+		/*News Container*/
+						.new_container {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							background-color: #FFFFFFA6;
+							margin-left:50px;
+							margin-right:50px;
+							margin-bottom:50px;
+							padding:10px;
+							border-radius:10px;
+						}
+		/*News Photos*/
+							.new_photo {
+								width:100%;
+								border-radius:10px;
+							}
+		/*News Description*/
+							.new_description {
+								margin-left:20px;
+								margin-right:20px;
+								font-size: 2vw;
+							}
+	/*Footer*/
+		/*Container*/
+					.footer_menu {
+						display: flex;flex-direction: row-reverse;
+						justify-content:space-between;
+						align-items: flex-end;
+					}
+		/*Links*/
+						.link_list {
+							color: white;
+							font-size: 30px;
+							margin-right:30px;
+						}
+						.link_list  a,  li {
+							text-decoration: none;
+							color:white;list-style: none;
+							list-style-type: none;
+							font-family: Montserrat;
+						}
+						.social_media {
+							display: flex;
+							flex-direction: column;
+							justify-content:flex-end;
+							align-items: flex-end;
+							list-style: none;
+							list-style-type: none;
+						}
+		/*Logos*/
+							.logo_social {
+								width:20%;
+							}
+							.logo {
+								width:10%;
+							}
 
 /*desktop device*/
 	@media all and (min-device-width: 480px)
 	{
-/*Header*/
-/*Body Header*/
-		.header_container{flex-direction: row;}		
-		.header_photo{ width:50%;border-radius:10px 0px 0px 10px;}
-		.header_description{border-radius:0px 10px 10px 0px;}
-		.body_title{margin-bottom:5%;font-size:2vw}
-		.description_txt{font-size:1.5vw;line-height:;}
-		.news {font-size: 18px}
-		.movies{font-size: 18px}
-/*Section => News*/
-		.new_container{flex-direction: row;}
-		.new_photo{width:30%;}
-		.new_description{font-size: 1.5vw}
-/*Footer*/
-
+	/*Body Header*/
+		/*Container*/
+					.header_container {
+						flex-direction: row;
+					}
+		/*Photos*/	
+					.header_photo{
+						width:50%;
+						border-radius:10px 0px 0px 10px;
+					}
+		/*Description Container*/
+					.header_description{
+						border-radius:0px 10px 10px 0px;
+					}
+		/*Description*/
+					.body_title{
+						margin-bottom:5%;
+						font-size:2vw;
+					}
+					.description_txt{
+						font-size:1.5vw;
+					}
+		/*Menus*/
+					.news {
+						font-size: 18px;
+					}
+					.movies{
+						font-size: 18px;
+					}
+		/*Section => News*/
+					.new_container{
+						flex-direction: row;
+					}
+					.new_photo{
+						width:30%;
+					}
+					.new_description{
+						font-size: 1.5vw;
+					}
+	}
+/*Desktop large screen*/
 	@media all and (min-device-width: 1180px)
 	{
-/*Body Header*/
-/*Section => Movies Posters*/
-	.box {line-height:1.5em ;}
+	/*Section => Movies Posters*/
+		/*Description Container*/
+					.box {
+						line-height:1.5em ;
+					}
 	}
+	
