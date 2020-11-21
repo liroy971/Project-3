@@ -3,31 +3,13 @@
 <head>
 		<meta charset="UTF-8">
 	<title>Watch It Outside Event and Co-Register</title>
-	<link rel="stylesheet" href=""  type="text/css" media="all">
+	<link rel="stylesheet" href="register.css"  type="text/css" media="all">
 </head>
 
-<body style="display:flex;justify-content: center;align-items: center;width:100%;background-color:#0000008c;border-radius: 15px;padding-bottom:15px;font-family: montserrat;overflow-y: hidden;overflow-x: hidden;">
-<style>
-			/*Popup*/
-	form {padding-right:40px;padding-left:40px;}
-	html {margin:none !important;height:100%;background-color: #000;background:url(images/news/new-3.jpg);background-size: auto;padding:10px;padding-right: 30px;background-repeat: no-repeat;}
-	label {display:flex;flex-direction: column;margin-top: 20px;margin-bottom: 15px;justify-content: center;color:white;}
-	input {display:flex;flex-direction: column;width:100%;border:solid 1px;background-color:white;margin-right: 20px;border-radius: 5px;}
-	textarea {width:100%;height:100px;resize:none;}
-	.liste{display:flex;flex-direction: column:background-color:silver;height:20px;border-radius: 5px;}
-	select {width:100%;height:30px;border-radius: 5px;text-align: center;}
+<body>
+<form method="post" action="">
+	<label>Register</label>
 
-</style>
-<form method="post" action="" style="width:100%;">
-	<label class>Register</label>
-	<label> Your Name (required)</label>
-	   <input type="text" name="your-name"> 
-
-	<label> Your Email (required)</label>
-	   <input type="text" name="your-Email">
-
-	<label> Subject (required)</label>
-		<input type="text" name="Subject">
 	<label>The Movies</label>
 	    <select name="movies" id="movies">
 		    <optgroup label="6th August"class="liste">
@@ -50,10 +32,20 @@
 	           <option value="Project power"class="liste">Project power - 8pm</option>
 	           <option value="Terminator dark fate"class="liste">Terminator Dark Fate - 10pm</option>
 	       </optgroup>
-  		</select>
+  		</select>		
+
+	<label> Your Name (required)</label>
+	   <input type="text" name="your-name"class="input"> 
+
+	<label> Your Email (required)</label>
+	   <input type="text" name="your-Email"class="input">
+
+	<label> Subject (required)</label>
+		<input type="text" name="Subject"class="input">
+
 	<label> Your Message</label>
 		<textarea type="text" name="your-message"></textarea>
-			<input type="submit" value="Send"/>
+			<input type="submit" value="Send" class="submit"/>
 </form>    
 </body>
 </html>
