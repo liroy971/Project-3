@@ -10,8 +10,8 @@
 <form method="post" action="">
 	<label>Register</label>
 
-	<label>The Movies</label>
-	    <select name="movies" id="movies">
+	<label>Choose the Movies (required)</label>
+	    <select name="movies" id="movies" required>
 		    <optgroup label="6th August"class="liste">
 	           <option value="Pinnochio"class="liste">Pinnochio - 6pm</option>
 	           <option value="Jungle Cruise"class="liste">Jungle Cruise - 8pm</option>
@@ -35,17 +35,19 @@
   		</select>		
 
 	<label> Your Name (required)</label>
-	   <input type="text" name="your-name"class="input"> 
+	   <input type="text" name="your-name"class="input" required> 
 
 	<label> Your Email (required)</label>
-	   <input type="text" name="your-Email"class="input">
+	   <input type="text" name="your-Email"class="input" required>
 
 	<label> Subject (required)</label>
-		<input type="text" name="Subject"class="input">
+		<input type="text" name="Subject"class="input" required>
 
-	<label> Your Message</label>
+	<label> Your Message (Optional)</label>
 		<textarea type="text" name="your-message"></textarea>
-			<input type="submit" value="Send" class="submit"/>
+
+	<input type="submit" value="Send" class="submit"/>
+	
 </form>    
 </body>
 </html>

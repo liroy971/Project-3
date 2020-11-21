@@ -57,7 +57,7 @@
 							transform: scale(1.01);
 						}
 						.btn_home {
-							margin-right: 50px;
+							margin-right: 20px;
 						}
 		
 
@@ -294,16 +294,12 @@
 	/*Header*/
 		/*Container*/
 					.header {
-						height:50px;
+						height:75px;
 					}
 		/*Links*/
 					.header  a {
-						font-size: 1vw;
-					}
-					.btn_home {
-						margin-right:initial;
-					}
-		
+						font-size: 2.5vw;
+					}	
 	/*Body Header*/
 		/*Container*/
 					.header_container {
@@ -352,5 +348,13 @@
 					.box {
 						line-height:1.5em ;
 					}
+	/*Header*/
+		/*Container*/
+					.header {
+						height:50px;
+					}
+		/*Links*/
+					.header  a {
+						font-size: 1vw;
+					}
 	}
-	
